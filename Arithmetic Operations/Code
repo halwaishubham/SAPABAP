@@ -1,14 +1,7 @@
-REPORT  ycl_arithmetic_08. "start of report default line with file name.
-
-*declaration of variable var_1 & var_2
-*Parameters key used for taking inputs from user
-*type is used for defining type of variable int, char, float etc.
-*parameters will provide us selection screen
+REPORT  ycl_arithmetic_08. 
 
 PARAMETERS: var_1 TYPE i,
             var_2 TYPE i.
-
-*data keyword is used for the default variable declaration
 
 DATA: var_3 TYPE i,
       var_4 TYPE i,
@@ -19,18 +12,6 @@ var_3 = var_1 + var_2. "command for addition of two numbers
 var_4 = var_1 - var_2. "command for subtraction of two numbers
 var_5 = var_1 * var_2. "command for multiplication of two numbers
 var_6 = var_1 / var_2. "command for division of two numbers
-
-*ULINE AT 1(45) : this command is used for underline (horizontal lines)
-*where 1 is cloumn number and 45 is length of line
-*sy-vline is used for vertical line
-*7 color in abap editor from 1 to 7 keyword is color
-*color 1 = Gray-blue
-*color 2 = Light gray
-*color 3 = Yellow
-*color 4 = Blue-green
-*color 5 = green
-*color 6 = red
-*color 7 = orange
 
 ULINE AT 1(45).
 WRITE: / sy-vline, 'Result for Addition :', 32 sy-vline, var_3 COLOR 4, 45 sy-vline.
