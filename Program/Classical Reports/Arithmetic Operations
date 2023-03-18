@@ -1,1 +1,28 @@
+REPORT  ycl_arithmetic_08. 
 
+PARAMETERS: var_1 TYPE i,
+            var_2 TYPE i.
+
+DATA: var_3 TYPE i,
+      var_4 TYPE i,
+      var_5 TYPE i,
+      var_6 TYPE i.
+
+var_3 = var_1 + var_2. 
+var_4 = var_1 - var_2.
+var_5 = var_1 * var_2. 
+var_6 = var_1 / var_2. 
+
+ULINE AT 1(45).
+WRITE: / sy-vline, 'Result for Addition :', 32 sy-vline, var_3 COLOR 4, 45 sy-vline.
+ULINE AT /1(45).
+
+WRITE: / sy-vline, 'Result for Subtraction :', 32 sy-vline, var_4 COLOR 5, 45 sy-vline.
+ULINE AT /1(45).
+
+WRITE: / sy-vline, 'Result for Multiplication :', 32 sy-vline, var_5 COLOR 6, 45 sy-vline.
+ULINE AT /1(45).
+
+WRITE: / sy-vline, 'Result for Division :', 32 sy-vline, var_6 COLOR 7, 45 sy-vline.
+ULINE AT /1(45).
+        
